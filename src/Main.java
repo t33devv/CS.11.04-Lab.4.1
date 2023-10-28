@@ -52,23 +52,16 @@ public class Main {
         Scanner src = new Scanner(input);
         while (src.hasNext()) {
             String word = src.next();
-            //System.out.println(word);
-
-            int intEnd = 0;
-            for (int i=1; i < word.length(); i++)
-                if ('0' <= word.charAt(i) && word.charAt(i) <= '9')
-                    intEnd = i;
-                else
+            int intEnd;
+            for (intEnd=0; intEnd < word.length(); intEnd++)
+                if ('0' > word.charAt(intEnd) || word.charAt(intEnd) > '9')
                     break;
-            int first = Integer.parseInt(word.substring(0, intEnd+1));
-            String rest = word.substring(intEnd+1);
-            //System.out.println("" + first + "\t" + rest);
+            int first = Integer.parseInt(word.substring(0, intEnd));
+            String rest = word.substring(intEnd);
 
             msg += " " + (char) first;
             if (rest.length() == 1)
                msg += rest;
-            else if (rest.length() == 2)
-               msg += "" + rest.charAt(1) + rest.charAt(0);
             else
                msg += "" + rest.charAt(rest.length()-1) + rest.substring(1, rest.length()-1) + rest.charAt(0);
         }
