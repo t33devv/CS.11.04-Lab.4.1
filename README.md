@@ -40,6 +40,8 @@ the first letter is replaced by its character code (e.g. H becomes 72)
 
 Note: there are no special characters used, only letters and spaces
 
+Hint: You may find it useful to write an `encryptWord()` helper method that handles a single word
+
 **Examples**
 
 encryptThis('Hello good day'); // '72olle 103doo 100ya'
@@ -58,6 +60,8 @@ the second and the last letter is switched (e.g. Hello becomes Holle)
 the first letter is replaced by its character code (e.g. H becomes 72)
 
 Note: there are no special characters used, only letters and spaces
+
+Hint: You may find it useful to write a `decipherWord()` helper method that handles a single word
 
 **Examples**
 
