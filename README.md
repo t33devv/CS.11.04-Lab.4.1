@@ -2,7 +2,6 @@
 
 All of the methods should be implemented within the Main class. 
 Declare all methods as static.
-For questions 5. and 6. you may want to check out how to use the StringBuilder class.
 
 1. Write a method called parenthesesCheck that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
 
